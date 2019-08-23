@@ -1,6 +1,6 @@
 # CopyrKotBot Selection tool for Telegram Bots
 Bot allows you to make and pay for the printout of files online.
-The user no longer has to queue for a printout or bring a USB flash drive
+The user no longer has to queue for a printout or bring a USB flash drive \n
 Telegram bot written in Python using [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI). 
 Bot based on [CopyrKotBot](https://t.me/@copykotbot)
 Git based on [CopyrKotBot](https://github.com/ili444/CopyrKotBot).
