@@ -5,7 +5,7 @@ The user no longer has to queue for a printout or bring a USB flash drive.
 
 Telegram bot written in Python using [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI). 
 
-Bot based on [CopyrKotBot](https://t.me/@copykotbot). [Link to bypass blocking.](https://teleg.run/copykotbot)
+Bot based on [CopyrKotBot](https://teleg.run/copykotbot).
 
 Git based on [CopyrKotBot](https://github.com/ili444/CopyrKotBot).
 ## Description
