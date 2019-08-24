@@ -20,7 +20,7 @@ from flask import Flask, request
 
 
 
-TOKEN = "99999999:AAHdwGKlCi9EwMZt4L3UwL8FvmQIliKLgwA"
+TOKEN = "token"
 bot = telebot.TeleBot(TOKEN, threaded=False)
 
 
@@ -61,7 +61,7 @@ class Markup():
         now = datetime.now()
         today = datetime.today().strftime('%H:%M')
         time_order = f"{now.year}-{now.month}-{now.day}  {today}"
-        from_chat_id = -1001406737777
+        from_chat_id = -3333306737777
         name = f'{callback.from_user.first_name} {callback.from_user.last_name} @{callback.from_user.username}'
         total_price = mark_up.call_value(chat_id, 'total_price')
         message_id = mark_up.call_value(chat_id, 'message_id')
@@ -182,7 +182,7 @@ class Markup():
         a1 = types.InlineKeyboardButton("Оплата в одно касание", callback_data='now')
         a2 = types.InlineKeyboardButton("Оплатa при получении", callback_data='later')
         a3 = types.InlineKeyboardButton("Оплата переводом Яндекс.Деньги",
-                                        url=f'https://money.yandex.ru/transfer?receiver=410017399939823&sum={total_price}&success'
+                                        url=f'https://money.yandex.ru/transfer?receiver=333333939823&sum={total_price}&success'
                                             f'URL=&quickpay-back-url=https://t.me/copykotbot&shop-host=&label={number_ship}&'
                                             f'targets=№{number_ship}'
                                             '&comment=&origin=form&selectedPaymentType=pc&destination='
@@ -353,7 +353,7 @@ class Markup():
                     file_name = line3[0]
                     type_print = line3[1]
                     link = (line3[5])[2:-2]
-                    channel_id = -1001406737368
+                    channel_id = -333336737368
                     if 'Канцелярия' in type_print:
                         pass
                     elif 'https://api.telegram.org/bot' is not link:
@@ -679,7 +679,7 @@ def handle_start(message):
 
 @bot.message_handler(commands=['lensub'])
 def hand_start(message):
-    if message.chat.id == 481077652:
+    if message.chat.id == 333377652:
         lensub = mark_up.len_sub()
         bot.send_message(message.chat.id, str(lensub))
     else:
@@ -758,7 +758,7 @@ def msg_hand(message):
             type_print = 'Канцелярия'
             mark_up.update_key(chat_id, 'type_print', type_print)
         if message.text == '📲 Обратная связь':
-            bot.send_contact(chat_id, phone_number=89039206886, first_name='Екатерина')
+            bot.send_contact(chat_id, phone_number=333336886, first_name='Екатерина')
             bot.send_location(chat_id, 56.012386, 92.8707427)
             bot.send_message(chat_id, 'Адрес: Проспект Мира 80а, Красноярск (ТЦ АВЕНЮ, 4 этаж)\n'
                                       'Пн - Сб 10:00 - 19:00\nВс - выходной')
@@ -1163,7 +1163,7 @@ def callback_query_handler(callback):
                                                 }]}}, ensure_ascii=False)
                 if price1 > 6569.0:
                     mark_up.send_check(chat_id,
-                                     provider_token='3955555552:LIVE:5413',
+                                     provider_token='3955555552:LIVE:33333',
                                      start_parameter='true',
                                      title=title,
                                      description=f'✅ {m}  ₽',
